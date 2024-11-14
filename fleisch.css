@@ -1,0 +1,73 @@
+
+body {
+    background-color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 1em;
+    color: #fff;
+  }
+  
+  main {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+  }
+  
+  .food {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .food-info {
+    padding: 1em;
+  }
+  
+  .food h2 {
+    margin-bottom: 0.5em;
+  }
+  
+  .food p {
+    margin-bottom: 1em;
+  }
+  
+  .food-option {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .a-preis, .a-add {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .a-preis:hover, .a-add:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .zurück {
+    display: block;
+    text-align: center;
+    margin: 2em 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .zurück:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
