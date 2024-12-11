@@ -293,7 +293,7 @@ p {
   textarea,
   button {
     padding: 0.5rem;
-    width: 100%;
+    width: 350px;
   }
 
   footer {
