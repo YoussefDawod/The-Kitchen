@@ -1,83 +1,88 @@
 :root {
-    --text-primary: #444c99; /* Dunkles Violettblau */
-    --text-secondary: #9dfacd; /* Helles Smaragdgrün */
-    --text-tertiary: #f2e9e4; /* Helles Beige */
-    --background-primary: #fff8e8; /* Cremiges Weiß */
-    --background-secondary: #f4a261; /* Warme Terracotta */
-    --button-color: #fc967d; /* Leuchtendes Orange */
-    --hover-color: #ff8059; /* Zartes Gelb */
-    --text-shadow-color: rgba(61, 64, 91, 0.6); /* Dunkles Violettblau als Schatten */
-    --box-shadow-color: rgba(129, 178, 154, 0.3); /* Smaragdgrün als Schatten */
-    
+  --text-primary: #444c99; /* Dunkles Violettblau */
+  --text-secondary: #9dfacd; /* Helles Smaragdgrün */
+  --text-tertiary: #f2e9e4; /* Helles Beige */
+  --background-primary: #fcecc7; /* Cremiges Weiß */
+  --background-secondary: #f4a261; /* Warme Terracotta */
+  --button-color: #fc967d; /* Leuchtendes Orange */
+  --hover-color: #ff8059; /* Zartes Gelb */
+  --text-shadow-color: rgba(
+    61,
+    64,
+    91,
+    0.6
+  ); /* Dunkles Violettblau als Schatten */
+  --box-shadow-color: rgba(129, 178, 154, 0.3); /* Smaragdgrün als Schatten */
 }
 
 *,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: var(--background-primary);
+  background-color: var(--background-primary);
 }
 
 header {
-    height: 150px;
-    background-color: var(--background-secondary);
-    color: var(--text-tertiary);
-    text-align: center;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  height: 150px;
+  background-color: var(--background-secondary);
+  color: var(--text-tertiary);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 3rem 0 0;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem 0 0;
+  background-color: var(--background-secondary);
 }
 
 .nav-bar {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
 }
 
 .a-nav {
-    color: var(--text-tertiary);
-    text-decoration: none;
-    transition: background-color 0.3s;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 .a-nav:hover {
-    color: var(--hover-color);
+  color: var(--hover-color);
 }
 
 .logo {
-    height: 50px;
+  height: 50px;
 }
 
 .header-text {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  text-align: justify;
 }
 
 #about,
@@ -85,158 +90,217 @@ main {
 #drinks,
 #reservation,
 #contact {
-    color: var(--text-tertiary);
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: var(--box-shadow-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    height: 100vh;
+  color: var(--text-tertiary);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 100vh;
 }
 
 #about {
-    background: url("./Images/bg.avif") no-repeat center center/cover;
-    padding: 0;
+  background: url("./Images/bg.avif") no-repeat center center/cover;
+  padding: 0;
 }
 
 #speisen {
-    background: url("./Images/speisen-bg.png") no-repeat center center/cover;
+  background: url("./Images/speisen-bg.png") no-repeat center center/cover;
 }
 
 #drinks {
-    background: url("./Images/drinks-bg.jpg") no-repeat center center/cover;
+  background: url("./Images/drinks-bg.jpg") no-repeat center center/cover;
 }
 
 #reservation {
-    background: url("./Images/Reservirung.avif") no-repeat center center/cover;
+  background: url("./Images/Reservirung.avif") no-repeat center center/cover;
 }
 
 #contact {
-    background: url("./Images/restaurant-logo.png") no-repeat center center/cover;
+  background: url("./Images/restaurant-logo.png") no-repeat center center/cover;
 }
 
 .speise-sorten,
 .drinks-sorten,
 form,
-.contact-inhalt,
 .p-about {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1em;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 1rem;
-    box-shadow: var(--box-shadow-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow-color);
 }
 
-
-
 .a-sorte {
-    color: var(--text-tertiary);
-    text-decoration: none;
-    padding: 1rem;
-    width: 100%;
-    border-bottom: 1px solid var(--button-color);
-    box-shadow: var(--box-shadow-color);
-    transition: background-color 0.3s;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid var(--button-color);
+  box-shadow: var(--box-shadow-color);
+  transition: background-color 0.3s;
 }
 
 .a-sorte:hover {
-    background-color: var(--hover-color);
+  background-color: var(--hover-color);
 }
 
 li {
-    list-style:inside;
-    padding: 0.5rem 0 0 2rem;
+  list-style: inside;
+  padding: 0.5rem 0 0 2rem;
 }
 
 #reservation {
-    align-items: center;
+  align-items: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-    max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 600px;
 }
 
 input,
 textarea,
 button {
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: var(--box-shadow-color);
-    border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow-color);
+  border: none;
 }
 
 button {
-    background-color: var(--button-color);
-    color: var(--text-tertiary);
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: var(--button-color);
+  color: var(--text-tertiary);
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: var(--hover-color);
+  background-color: var(--hover-color);
 }
 
 #contact {
-    background-color:var(--background-secondary);
-    display: flex;
-    justify-content: center;
-    padding: 0;
+  background-color: var(--background-secondary);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.contact-inhalt {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: var(--box-shadow-color);
 }
 
 .contact-inhalt,
 .p-about {
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact ul {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 footer {
-    height: 150px;
-    background-color:var(--background-secondary);
-    color: var(--text-tertiary);
-    text-align: center;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  height: 150px;
+  background-color: var(--background-secondary);
+  color: var(--text-tertiary);
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 footer a {
-    color: var(--text-secondary);
-    font-size: 30px;
-    padding-left: 1rem;
+  color: var(--text-secondary);
+  font-size: 30px;
+  padding-left: 1rem;
 }
 
 footer a:hover {
-    color: var(--hover-color);
+  color: var(--hover-color);
 }
 
-h1, h2 {
-    color: var(--text-primary);
-    box-shadow: var(--box-shadow-color);
+h1,
+h2 {
+  color: var(--text-primary);
+  box-shadow: var(--box-shadow-color);
 }
 
 h4 {
-    color: var(--text-secondary);
-    box-shadow: var(--box-shadow-color);
+  color: var(--text-secondary);
+  box-shadow: var(--box-shadow-color);
 }
 
 p {
-    color: var(--text-tertiary);
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 150px;
+  }
+
+  nav {
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 .5rem 0 0;
+    background-color: var(--background-secondary);
+  }
+
+  .nav-bar {
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+  }
+
+  #about,
+  #speisen,
+  #drinks,
+  #reservation {
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .speise-sorten,
+  .drinks-sorten,
+  form,
+  .p-about {
+    padding: 0.5rem;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  input,
+  textarea,
+  button {
+    padding: 0.5rem;
+  }
+
+  footer {
+    height: 100px;
+    padding: 0.5rem;
+  }
+
+  footer a {
+    font-size: 20px;
+  }
 }
