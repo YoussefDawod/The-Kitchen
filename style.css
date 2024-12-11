@@ -252,7 +252,7 @@ p {
   color: var(--text-tertiary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   header {
     height: 150px;
   }
