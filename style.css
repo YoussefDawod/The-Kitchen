@@ -252,7 +252,7 @@ p {
   color: var(--text-tertiary);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   header {
     height: 150px;
   }
@@ -266,7 +266,7 @@ p {
 
   .nav-bar {
     gap: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding-top: 1rem;
   }
 
@@ -286,14 +286,14 @@ p {
   }
 
   form {
-    max-width: 100%;
+    width: 100%;
   }
 
   input,
   textarea,
   button {
     padding: 0.5rem;
-    width: 350px;
+    width: 100%;
   }
 
   footer {
